@@ -1,0 +1,10 @@
+.env__
+runs/
+checkpoints/
+*.h5
+*.pt
+*.csv
+data/
+.venv/
+.DS_status
+
