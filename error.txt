@@ -1,0 +1,19 @@
+خطأ واجهته اليوم:
+عند محاولة رفع الفرع إلى GitHub باستخدام الأمر:
+git push -u origin readme/docs
+
+ظهر الخطأ:
+fatal: 'origin' does not appear to be a git repository
+
+تحليل الخطأ وحله:
+تحققت من الـ remote باستخدام الأمر:
+git remote -v
+
+ولم يظهر أي شيء، وهذا يعني أن المستودع المحلي لم يكن مرتبطًا بمستودع GitHub.
+قمت بإضافة رابط المستودع باستخدام:
+git remote add origin https://github.com/tahafoud/ai-ready-data-tool.git
+
+ثم تحققت من الربط باستخدام:
+git remote -v
+
+وبعد التأكد من ظهور origin، أعدت تنفيذ أمر push ونجح رفع الفرع إلى GitHub.
